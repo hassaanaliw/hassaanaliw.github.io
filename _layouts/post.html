@@ -1,0 +1,36 @@
+---
+layout: default
+---
+<article>
+  <a href="{{ post.url }}">
+    <h2 class="title">
+      {{ page.title }}
+    </h2>
+  </a>
+  <div class="content">
+    {{ content }}
+    <hr>
+    <time>
+      {{ page.date | date_to_string }}
+    </time>
+  </div>
+</article>
+<aside>
+  <h2 class="title blu">
+    Share
+  </h2>
+  <div class="content white">
+    <a href="http://twitter.com/intent/tweet?text={{ page.title | escape }}&url={{ site.url }}{{ page.url | escape }}" class="twt">
+      Twitter
+    </a>
+    <a href="https://plus.google.com/share?url={{ site.url }}{{ page.url | escape }}" class="gplus">
+      Google+
+    </a>
+    <a href="http://www.facebook.com/sharer.php?u={{ site.url }}{{ page.url | escape }}" class="fb">
+      Facebook
+    </a>
+  </div>
+  
+  
+  </aside>
+

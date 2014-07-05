@@ -1,0 +1,7 @@
+name: PyChallenge
+markdown: redcarpet
+pygments: true
+permalink: /:title
+author : Hassaan Ali Wattoo
+
+
