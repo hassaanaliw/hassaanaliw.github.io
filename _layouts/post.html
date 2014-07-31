@@ -1,36 +1,25 @@
 ---
 layout: default
 ---
-<article>
-  <a href="{{ post.url }}">
-    <h2 class="title">
-      {{ page.title }}
-    </h2>
-  </a>
-  <div class="content">
-    {{ content }}
-    <hr>
-    <time>
-      {{ page.date | date_to_string }}
-    </time>
-  </div>
-</article>
-<aside>
-  <h2 class="title blu">
-    Share
-  </h2>
-  <div class="content white">
-    <a href="http://twitter.com/intent/tweet?text={{ page.title | escape }}&url={{ site.url }}{{ page.url | escape }}" class="twt">
-      Twitter
-    </a>
-    <a href="https://plus.google.com/share?url={{ site.url }}{{ page.url | escape }}" class="gplus">
-      Google+
-    </a>
-    <a href="http://www.facebook.com/sharer.php?u={{ site.url }}{{ page.url | escape }}" class="fb">
-      Facebook
-    </a>
-  </div>
-  
-  
-  </aside>
 
+<div class="post">
+  <h1 class="post-title">{{ page.title }}</h1>
+  <span class="post-date">{{ page.date | date_to_string }}</span>
+  {{ content }}
+</div>
+
+<div class="related">
+  <h2>Related Posts</h2>
+  <ul class="related-posts">
+    {% for post in site.related_posts limit:3 %}
+      <li>
+        <h3>
+          <a href="{{ post.url }}">
+            {{ post.title }}
+            <small>{{ post.date | date_to_string }}</small>
+          </a>
+        </h3>
+      </li>
+    {% endfor %}
+  </ul>
+</div>

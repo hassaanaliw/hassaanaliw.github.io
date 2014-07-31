@@ -1,7 +1,24 @@
-name: PyChallenge
-markdown: redcarpet
-pygments: true
-permalink: /:title
-author : Hassaan Ali Wattoo
+# Dependencies
+markdown:         redcarpet
+pygments:         true
 
+# Permalinks
+permalink:        pretty
 
+# Setup
+title:            Olympia
+tagline:          'A Python Blog'
+description:      'Python challenges and tutorials'
+url:              http://lanyon.getpoole.com
+baseurl:          '/'
+paginate:         5
+
+author:
+  name:           'Hassaan Ali Wattoo'
+  url:            https://github.com/hassaanaliw
+
+# Custom vars
+version:          1.0.0
+
+github:
+  repo:           https://github.com/hassaanaliw/hassaanaliw.github.io
