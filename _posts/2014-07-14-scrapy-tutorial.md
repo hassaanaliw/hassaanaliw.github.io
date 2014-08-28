@@ -15,7 +15,7 @@ The entire Installation is outlined :: <a href = "http://doc.scrapy.org/en/lates
 <p>Navigate to a directory where you want to create a project and run 
 
 
-       {% highlight ruby %} scrapy startproject play {% endhighlight %}
+       {% highlight python lineos %} scrapy startproject play {% endhighlight %}
 
 
 This should create a project with the name 'play' with a directory structure of :
@@ -31,7 +31,7 @@ This should create a project with the name 'play' with a directory structure of 
 </pre>
 
 Open items.py and change the code to :
- {% highlight ruby %} 
+ {% highlight python lineos %} 
  # -*- coding: utf-8 -*-
 
 # Define here the models for your scraped items
@@ -57,7 +57,7 @@ Open gp.py and import the following :
 
 
      
-{% highlight ruby %} 
+{% highlight python lineos %} 
 from scrapy.spider import BaseSpider
 from scrapy.selector import HtmlXPathSelector
 from play.items import PlayItem #remember we declared PlayItem in items.py
@@ -69,7 +69,7 @@ Ok , now suppose we want to scrape links and titles from the Finance Category. L
 
 <p>Ok so lets create a Finance class. Change gp.py to :
 
-{% highlight ruby %}
+{% highlight python lineos %}
 
 from scrapy.spider import BaseSpider
 from scrapy.selector import HtmlXPathSelector
@@ -90,7 +90,7 @@ NOTE : hxs Is the Selector that will find us the information from our page sourc
 <a href = "http://www.w3schools.com/XPath/"> XPath tutorial at w3schools </a>
 <br></br>
 
-{% highlight ruby %}
+{% highlight python lineos %}
 from scrapy.spider import BaseSpider
 from scrapy.selector import HtmlXPathSelector
 from play.items import PlayItem #remember we declared PlayItem in items.py
@@ -132,7 +132,7 @@ Ok so our code is done.
 
 Go back to the root directory of play and run 
 
-{% highlight ruby%}
+{% highlight python lineos%}
 
 scrapy crawl finance -o data.csv -t csv
 
