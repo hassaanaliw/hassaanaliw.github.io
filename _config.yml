@@ -7,8 +7,8 @@ permalink:        pretty
 
 # Setup
 title:            Olympia
-tagline:          'A Python Blog'
-description:      'Python challenges and tutorials'
+tagline:          'A Programming Blog'
+description:      'Python and Java challenges and tutorials'
 url:              http://lanyon.getpoole.com
 baseurl:          '/'
 paginate:         5
