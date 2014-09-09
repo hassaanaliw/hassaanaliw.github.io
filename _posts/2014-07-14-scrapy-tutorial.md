@@ -2,7 +2,7 @@
 layout: post
 title: "Scrapy Tutorial : Let's Crawl Google Play"
 description: "Learn how to use Scrapy to crawl one of the biggest app stores."
-category: 
+category: Python
 tags: []
 ---
 <h3>An Introduction to Scrapy</h3>
