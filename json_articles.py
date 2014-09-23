@@ -1,10 +1,8 @@
 import os
 import json
 import re
-from pprint import pprint
-from dirtools import Dir
-from github import Github
-from sh import git,sudo
+
+from sh import git, sudo
 import uuid
 
 
@@ -15,8 +13,6 @@ _REPO = "/Users/hassaanali/Desktop/hassaanaliw.github.io/"
 def listallfiles():
     list_files = os.listdir(_DIR)
     return list_files
-
-
 
 
 def do_json():
@@ -48,9 +44,12 @@ def do_json():
             category = matches.group(4)
             tags = matches.group(5)
 
+            u = file.split('-')
+            url = "http://hassaanaliw.github.io/%s/%s/%s/%s/%s/" % (category, u[0], u[1], u[2], title)
+
             contents.close()
 
-            f = open(_REPO+ "data.json", 'a')
+            f = open(_REPO + "data.json", 'a')
             # json.dumps(data,f)
 
             title = title.split(':')[1]
@@ -68,12 +67,13 @@ def do_json():
                 f.write('"%d" : {  \n'
                         ' "title" :  %s, \n\n'
                         '"description" : %s \n\n'
+                        '"url" : %s \n\n'
                         "}\n"
-                        % (i, title, description))
+                        % (i, title, description,url))
 
             f.write('\n\n\n')
             f.close()
-            #test()
+            # test()
 
     f = open(_REPO + "data.json", 'a')
     f.write("}")
@@ -88,18 +88,12 @@ def test():
 
 
 def github():
-
-
     git1 = git.bake(_cwd=_REPO)
     uu = uuid.uuid4()
 
     print sudo.git("add", "*")
-    print sudo.git("commit","-m","%s" % uu)
+    print sudo.git("commit", "-m", "%s" % uu)
     print sudo.git("push")
-
-
-
-
 
 
 do_json()
