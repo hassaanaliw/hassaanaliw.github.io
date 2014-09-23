@@ -5,6 +5,7 @@ from pprint import pprint
 from dirtools import Dir
 from github import Github
 from sh import git,sudo
+import uuid
 
 
 _DIR = "/Users/hassaanali/Desktop/hassaanaliw.github.io/_posts/"
@@ -90,9 +91,10 @@ def github():
 
 
     git1 = git.bake(_cwd=_REPO)
+    uu = uuid.uuid4()
 
     print sudo.git("add", "*")
-    print sudo.git("commit","-m","Hrl")
+    print sudo.git("commit","-m","%s" % uu)
     print sudo.git("push")
 
 
