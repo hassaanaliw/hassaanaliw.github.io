@@ -93,7 +93,7 @@ def github():
 
     print sudo.git("add", "*")
     print sudo.git("commit","-m","Hrl")
-    print sudo.git("push", "origin master")
+    print sudo.git("push")
 
 
 
