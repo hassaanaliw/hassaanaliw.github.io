@@ -60,8 +60,9 @@ def do_json():
                 f.write('"%d" : {  \n'
                         ' "title" :  %s, \n\n'
                         '"description" : %s \n\n'
+                        '"url" : %s \n\n'
                         "},\n"
-                        % (i, title, description))
+                        % (i, title, description,str(url)))
             elif i == filecount:
                 print i
                 f.write('"%d" : {  \n'
@@ -69,7 +70,7 @@ def do_json():
                         '"description" : %s \n\n'
                         '"url" : %s \n\n'
                         "}\n"
-                        % (i, title, description,url))
+                        % (i, title, description,str(url)))
 
             f.write('\n\n\n')
             f.close()
