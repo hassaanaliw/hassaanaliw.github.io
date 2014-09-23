@@ -19,7 +19,7 @@ def listallfiles():
 
 
 def do_json():
-    f = open(_DIR + "data.json", "wb")
+    f = open(_REPO + "data.json", "wb")
     f.write('{\n')
     f.close()
     i = 0
@@ -49,7 +49,7 @@ def do_json():
 
             contents.close()
 
-            f = open(_DIR + "data.json", 'a')
+            f = open(_REPO+ "data.json", 'a')
             # json.dumps(data,f)
 
             title = title.split(':')[1]
@@ -74,14 +74,14 @@ def do_json():
             f.close()
             #test()
 
-    f = open(_DIR + "data.json", 'a')
+    f = open(_REPO + "data.json", 'a')
     f.write("}")
     f.close()
-    test()
+    github()
 
 
 def test():
-    f = open(_DIR + "data.json", 'r')
+    f = open(_REPO + "data.json", 'r')
     dat = json.load(f)
     print(dat)
 
@@ -100,6 +100,5 @@ def github():
 
 
 
+do_json()
 
-
-github()
