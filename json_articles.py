@@ -45,7 +45,7 @@ def do_json():
             tags = matches.group(5)
 
             u = file.split('-')
-            url = "http://hassaanaliw.github.io/%s/%s/%s/%s/%s/" % (category.split(':')[1], u[0], u[1], u[2], title.split(':')[1])
+            url = "http://hassaanaliw.github.io/%s/%s/%s/%s/%s/" % (category.split(':')[1].replace(" ",""), u[0], u[1], u[2], title.split(':')[1].replace(" ",""))
 
             contents.close()
 
