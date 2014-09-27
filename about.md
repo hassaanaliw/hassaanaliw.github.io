@@ -25,11 +25,11 @@ title: About
 <div id="share-buttons" style="padding-top:50px;display: inline;padding-left: 250px;">
  
 	<!-- Facebook -->
-	<a href="http://www.facebook.com/sharer.php?u=http://random-git.herokuapp.com" target="_blank"><img src="http://www.simplesharebuttons.com/images/somacro/facebook.png" alt="Facebook" /></a>
+	<a href="http://www.facebook.com/sharer.php?u=http://hassaanaliw.github.io/" target="_blank"><img src="http://www.simplesharebuttons.com/images/somacro/facebook.png" alt="Facebook" /></a>
  
 	<!-- Twitter -->
-	<a href="http://twitter.com/share?url=http://random-git.herokuapp.com&text=Find Random Github Developers&hashtags=github" target="_blank"><img src="http://www.simplesharebuttons.com/images/somacro/twitter.png" alt="Twitter" /></a>
+	<a href="http://twitter.com/share?url=http://hassaanaliw.github.io/&text=Reading Olympia : A programming blog&hashtags=programming" target="_blank"><img src="http://www.simplesharebuttons.com/images/somacro/twitter.png" alt="Twitter" /></a>
 	
-	<a href="https://plus.google.com/share?url=http://random-git.herokuapp.com" target="_blank"><img src="http://www.simplesharebuttons.com/images/somacro/google.png" alt="Google" /></a>
+	<a href="https://plus.google.com/share?url=http://hassaanaliw.github.io" target="_blank"><img src="http://www.simplesharebuttons.com/images/somacro/google.png" alt="Google" /></a>
 
 </div>
