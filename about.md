@@ -8,6 +8,8 @@ title: About
 </p>
 
 <h3> Author : </h3> <p>  <a href="https://github.com/hassaanaliw/">Hassaan Ali Wattoo</a></p>
+<iframe src="http://ghbtns.com/github-btn.html?user=mdo&type=follow&count=true"
+  allowtransparency="true" frameborder="0" scrolling="0" width="165" height="20"></iframe>
 <p> Hassaan Ali Wattoo is a python and Android(Java) developer currently living in Pakistan. He can be seen lurking on <a href="https://github.com/hassaanaliw">Github</a> contributing and pushing. He also maintains <a href="http://json-overflow.herokuapp.com/"> Json-Overflow</a> and <a href="http://random-git.herokuapp.com"> Random -Git </a> online.</p>
 
 <style type="text/css">
