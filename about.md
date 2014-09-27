@@ -36,4 +36,4 @@ title: About
 </div>
 
 <iframe src="http://ghbtns.com/github-btn.html?user=hassaanaliw&type=follow&count=true"
-  allowtransparency="true" frameborder="0" scrolling="0" width="265" height="50"></iframe>
+  allowtransparency="true" align="center" frameborder="0" scrolling="0" width="265" height="50"></iframe>
