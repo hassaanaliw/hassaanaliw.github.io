@@ -8,7 +8,19 @@ title: About
 </p>
 
 <h3> Author : </h3> <p>  <a href="https://github.com/hassaanaliw/">Hassaan Ali Wattoo</a></p>
-<p> Hassaan Ali Wattoo is a python and Android(Java) developer currently living in Pakistan. He can be seen lurking on <a href="https://github.com/hassaanaliw">Github</a> contributing and pushing. He also maintains <a href="http://json-overflow.herokuapp.com/"> Json-Overflow</a> and <a href="http://random-git.herokuapp.com"> Random -Git </a> online.</p><br/></br></br></br></br></br></br></br></br>
+<p> Hassaan Ali Wattoo is a python and Android(Java) developer currently living in Pakistan. He can be seen lurking on <a href="https://github.com/hassaanaliw">Github</a> contributing and pushing. He also maintains <a href="http://json-overflow.herokuapp.com/"> Json-Overflow</a> and <a href="http://random-git.herokuapp.com"> Random -Git </a> online.</p><br/></br></br></br></br>
+
+<style type="text/css">
+ 
+	  #share-buttons img {
+	  width: 64px;
+	  padding: 5px;
+	  border: 0;
+	  box-shadow: 0;
+	  display: inline;
+	  }
+	  
+</style>
 
 <div id="share-buttons" style="padding-top:50px;padding-left: 600px;">
  
