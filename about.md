@@ -22,7 +22,7 @@ title: About
 	  
 </style>
 
-<div id="share-buttons" style="padding-top:50px;padding-left: 600px;">
+<div id="share-buttons" style="padding-top:50px;display: inline;padding-left: 250px;">
  
 	<!-- Facebook -->
 	<a href="http://www.facebook.com/sharer.php?u=http://random-git.herokuapp.com" target="_blank"><img src="http://www.simplesharebuttons.com/images/somacro/facebook.png" alt="Facebook" /></a>
