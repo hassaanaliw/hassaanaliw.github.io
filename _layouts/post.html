@@ -24,3 +24,28 @@ layout: default
     {% endfor %}
   </ul>
 </div>
+
+<style type="text/css">
+ 
+	  #share-buttons img {
+	  width: 64px;
+	  padding: 5px;
+	  border: 0;
+	  box-shadow: 0;
+	  display: inline;
+	  }
+	  
+</style>
+
+<div id="share-buttons" style="padding-top:50px;display: inline;padding-left: 250px;">
+ 
+	<!-- Facebook -->
+	<a href="http://www.facebook.com/sharer.php?u={{post.url}}" target="_blank"><img src="http://www.simplesharebuttons.com/images/somacro/facebook.png" alt="Facebook" /></a>
+ 
+	<!-- Twitter -->
+	<a href="http://twitter.com/share?url={{post.url}}&text=Reading{{post.title}}&hashtags=programming" target="_blank"><img src="http://www.simplesharebuttons.com/images/somacro/twitter.png" alt="Twitter" /></a>
+	
+	<a href="https://plus.google.com/share?url={{post.url}}" target="_blank"><img src="http://www.simplesharebuttons.com/images/somacro/google.png" alt="Google" /></a>
+
+</div>
+
