@@ -1,24 +1,53 @@
-# Dependencies
-markdown:         redcarpet
-pygments:         true
+# Build settings
+markdown: redcarpet
+highlighter: pygments
 
-# Permalinks
-permalink:        pretty
+# Site settings
+title: "Olympia"
+description: > # this means to ignore newlines until "email:"
+   A Programming Blog by a Python Enthusiast.
 
-# Setup
-title:            Olympia
-tagline:          'A Programming Blog'
-description:      'Python and Java challenges and tutorials'
-url:              http://lanyon.getpoole.com
-baseurl:          '/'
-paginate:         5
+email: hassaanaliw@gmail.com
+#blog logo
+logo: "/assets/images/df_logo.jpg"
+# blog cover
+cover: "/assets/images/cA4aKEIPQrerBnp1yGHv_IMG_9534-3-2.jpg"
 
-author:
-  name:           'Hassaan Ali Wattoo'
-  url:            https://github.com/hassaanaliw
+name: 'Hassaan Ali Wattoo'
+author: 'Hassaan Ali Wattoo'
+author_image: "/assets/images/0.jpeg"
 
-# Custom vars
-version:          1.0.0
+paginate:	5
 
-github:
-  repo:           https://github.com/hassaanaliw/hassaanaliw.github.io
+url: "http://hassaanaliw.github.io" # the base hostname & protocol for your site
+baseurl: ""
+
+# social icons and sharing options
+social:
+  - icon:	twitter
+    url:	https://twitter.com/hassaanaliw
+    desc: Follow me on twitter
+    share_url: http://twitter.com/share
+    share_title: ?text=
+    share_link: "&amp;url="
+
+  - icon:	facebook
+    url:	https://facebook.com/hassaan.wattoo
+    desc: Connect with me facebook
+    share_url: //www.facebook.com/sharer.php
+    share_title: ?t=
+    share_link: "&amp;u="
+
+  - icon:	github
+    url:	https://github.com/hassaanaliw
+    desc:	Fork me on github
+    share_url:
+    share_title:
+    share_link:
+
+#  - icon:	google-plus
+#    url:	https://google.com/???
+#    desc:	Add me on google+
+#    share_url:
+#    share_title:
+#    share_link:
