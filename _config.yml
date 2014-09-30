@@ -4,12 +4,12 @@ highlighter: pygments
 
 # Site settings
 title: "Olympia"
-description: > # this means to ignore newlines until "email:"
+description: > 
    A Programming Blog by a Python Enthusiast.
 
 email: hassaanaliw@gmail.com
 #blog logo
-logo: "/assets/images/df_logo.jpg"
+logo: "/assets/images/rocket-512.png"
 # blog cover
 cover: "/assets/images/cA4aKEIPQrerBnp1yGHv_IMG_9534-3-2.jpg"
 

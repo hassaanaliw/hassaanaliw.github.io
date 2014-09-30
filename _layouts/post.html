@@ -42,7 +42,7 @@
                   });
                   $window.trigger('scroll');
 
-<<<<<<< HEAD
+
                   var height = $('.article-image').height();
                       $('.post-content').css('padding-top', height + 'px');
 
@@ -138,22 +138,8 @@
     </div>
   </body>
 </html>
-=======
-<div class="related">
-  <h2>Related Posts</h2>
-  <ul class="related-posts">
-    {% for post in site.related_posts limit:3 %}
-      <li>
-        <h3>
-          <a href="{{ post.url }}">
-            {{ post.title }}
-            <small>{{ post.date | date_to_string }}</small>
-          </a>
-        </h3>
-      </li>
-    {% endfor %}
-  </ul>
-</div>
+
+
 
 <style type="text/css">
  
@@ -167,16 +153,15 @@
 	  
 </style>
 
-<div id="share-buttons" style="padding-top:50px;display: inline;padding-left: 250px;">
+<div id="share-buttons" style="padding-top: 60px;display: inline;padding-left: 600px;">
  
 	<!-- Facebook -->
 	<a href="http://www.facebook.com/sharer.php?u=http://hassaanaliw.github.io{{page.url}}" target="_blank"><img src="http://www.simplesharebuttons.com/images/somacro/facebook.png" alt="Facebook" /></a>
  
 	<!-- Twitter -->
-	<a href="http://twitter.com/share?url=http://hassaanaliw.github.io{{page.url}}&text=Reading {{page.title}}&hashtags=programming" target="_blank"><img src="http://www.simplesharebuttons.com/images/somacro/twitter.png" alt="Twitter" /></a>
+	<a href="http://twitter.com/share?url=http://hassaanaliw.github.io{{page.url}}&text=@hassaanaliw Reading {{page.title}}&hashtags=programming" target="_blank"><img src="http://www.simplesharebuttons.com/images/somacro/twitter.png" alt="Twitter" /></a>
 	
 	<a href="https://plus.google.com/share?url=http://hassaanaliw.github.io{{page.url}}" target="_blank"><img src="http://www.simplesharebuttons.com/images/somacro/google.png" alt="Google" /></a>
 
 </div>
 
->>>>>>> 2c51a296dad6ad691134b7b48c42aafcdc6eaa91
