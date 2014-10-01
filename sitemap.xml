@@ -1,29 +1,35 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
-
+<!--
+Created using XmlSitemapGenerator.org - Free HTML, RSS and XML sitemap generator
+-->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-  <loc>http://hassaanaliw.github.io/</loc>
-  <lastmod>2014-09-09T19:04:23+00:00</lastmod>
+<loc>http://hassaanaliw.github.io/about.html</loc>
 </url>
 <url>
-  <loc>http://hassaanaliw.github.io/about/</loc>
-  <lastmod>2014-09-09T19:04:23+00:00</lastmod>
+<loc>
+http://hassaanaliw.github.io/programming/2014/07/05/challenge-1.html
+</loc>
 </url>
 <url>
-  <loc>http://hassaanaliw.github.io/python-challenges/</loc>
-  <lastmod>2014-09-09T19:04:23+00:00</lastmod>
+<loc>
+http://hassaanaliw.github.io/2014/09/29/flask-heroku-and-you.html
+</loc>
 </url>
 <url>
-  <loc>http://hassaanaliw.github.io/python/2014/07/14/scrapy-tutorial/</loc>
-  <lastmod>2014-09-09T19:04:23+00:00</lastmod>
+<loc>http://hassaanaliw.github.io/feed.xml</loc>
 </url>
 <url>
-  <loc>http://hassaanaliw.github.io/programming/2014/07/05/challenge-1/</loc>
-  <lastmod>2014-09-09T19:04:23+00:00</lastmod>
+<loc>http://hassaanaliw.github.io/</loc>
+</url>
+<url>
+<loc>
+http://hassaanaliw.github.io/python/2014/07/14/scrapy-tutorial.html
+</loc>
 </url>
 </urlset>
+<!--
+<guid value="c7ef6bde-d1d9-434e-a1a8-c96bd53e7b0f" />
+-->
+<!--
+Created using XmlSitemapGenerator.org - Free HTML, RSS and XML sitemap generator
+-->
