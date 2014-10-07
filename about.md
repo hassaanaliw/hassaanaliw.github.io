@@ -34,6 +34,11 @@ title: About
 	<li>
 		<a href="https://github.com/vinta/awesome-python">awesome-python</a>
 	</li>
+
+        <li>
+<a href="https://github.com/hassaanaliw/socialise"><b>Socialise</b></a>
+</li>
+
 </ul>
 
 </p>
