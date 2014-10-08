@@ -1,6 +1,4 @@
-#/bin/bash
 
-$NOW=$(date +"%m-%d-%Y")
 git add .
-git commit -m “$NOW”
+git commit -m “Automated Commit : A.sh”
 git push origin master

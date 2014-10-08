@@ -1,0 +1,4 @@
+def digitize(n):
+    return [num for num in n]
+
+digitize(456)
