@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Scrapy Tutorial Let's Crawl Google Play"
+title: "Scrapy Tutorial : Let's Crawl Google Play"
 description: "Learn how to use Scrapy to crawl one of the biggest app stores."
 category: Python
 tags: []
