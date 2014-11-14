@@ -19,8 +19,8 @@ author_image: "/assets/images/0.jpeg"
 
 paginate:	5
 
-gems:
-  - jekyll-redirect-from
+
+  
 
 
 url: "http://hassaanaliw.github.io" # the base hostname & protocol for your site
