@@ -17,10 +17,10 @@ title: About
    
 ">
 		<li>
-			<a href="http://json-overflow.herokuapp.com/"> JsonOverflow</a>
+			<a href="http://github.com/hassaanaliw/chromepass">ChromePass</a>
 		</li> 
 	<li>
-		<a href="http://random-git.herokuapp.com">RandomGit</a>
+		<a href="http://github.com/hassaanaliw/randomxkcd">RandomXKCD</a>
 	</li>
 	<li>
 		<a href="https://github.com/rg3/youtube-dl">youtube-dl</a>
@@ -32,7 +32,7 @@ title: About
 		<a href="https://github.com/hassaanaliw/GooglePlay-Crawler">GooglePlay Crawler</a>
 	</li>
 	<li>
-		<a href="https://github.com/vinta/awesome-python">awesome-python</a>
+		<a href="sociohub.herokuapp.com">SocialHub</a>
 	</li>
 
         <li>
