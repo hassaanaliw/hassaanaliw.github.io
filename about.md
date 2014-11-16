@@ -32,7 +32,7 @@ title: About
 		<a href="https://github.com/hassaanaliw/GooglePlay-Crawler">GooglePlay Crawler</a>
 	</li>
 	<li>
-		<a href="sociohub.herokuapp.com">SocialHub</a>
+		<a href="https://sociohub.herokuapp.com">SocialHub</a>
 	</li>
 
         <li>
