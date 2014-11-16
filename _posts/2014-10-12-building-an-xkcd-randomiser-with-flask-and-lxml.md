@@ -297,7 +297,7 @@ Now run
 
 And you should be greeted with something like this.
 
-![Success!](https://photos-6.dropbox.com/t/1/AABEbbEetZ80nBC3rvxom-_UkiwzaXKIM5JEDwo6ynU0Uw/12/320664844/png/1024x768/3/1416070800/0/2/localhost5000.png/t5SG53SI7zXqudh-tDRvj4xqT29ChX4Rg393bowVnn0) 
+![Success!](https://raw.githubusercontent.com/hassaanaliw/hassaanaliw.github.io/master/assets/images/localhost5000.png) 
 
 #Deploying to Heroku.
 
