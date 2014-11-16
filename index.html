@@ -3,18 +3,20 @@ layout: default
 
 ---
 
-<script type="text/javascript">
 
-if (window.location.protocol != "https:")
-    window.location.href = "https:" + window.location.href.substring(window.location.protocol.length);
-
-</script>
 
 <header class="blog-header">
 	
     {% if site.logo %}
      
     {% endif %}
+	
+	<script type="text/javascript">
+
+	if (window.location.protocol != "https:")
+	    window.location.href = "https:" + window.location.href.substring(window.location.protocol.length);
+
+	</script>
 	
     <h1 class="blog-title">{{ site.title }}</h1>
     <h2 class="blog-description">{{ site.description }}</h2>
