@@ -1,16 +1,21 @@
 ---
 layout: default
-redirect_to:
-  - https://hassaanaliw.github.io
+
 ---
 
+<script type="text/javascript">
 
+if (window.location.protocol != "https:")
+    window.location.href = "https:" + window.location.href.substring(window.location.protocol.length);
+
+</script>
 
 <header class="blog-header">
 	
     {% if site.logo %}
      
     {% endif %}
+	
     <h1 class="blog-title">{{ site.title }}</h1>
     <h2 class="blog-description">{{ site.description }}</h2>
     <div class="custom-links">
