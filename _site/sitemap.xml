@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
+    <url>
+        <loc>http://hassaanaliw.github.io/programming/2014/07/05/challenge-1.html</loc>
+        <lastmod>2014-10-11T15:44:08+05:00</lastmod>
+    </url>
+    <url>
+        <loc>http://hassaanaliw.github.io/python/2014/07/14/scrapy-tutorial.html</loc>
+        <lastmod>2014-10-11T15:44:08+05:00</lastmod>
+    </url>
+    <url>
+        <loc>http://hassaanaliw.github.io/python/2014/10/11/getting-started-with-flask.html</loc>
+        <lastmod>2014-10-11T23:33:07+05:00</lastmod>
+    </url>
+    <url>
+        <loc>http://hassaanaliw.github.io/404.html</loc>
+        <lastmod>2014-10-11T13:07:42+05:00</lastmod>
+    </url>
+    <url>
+        <loc>http://hassaanaliw.github.io/about.html</loc>
+        <lastmod>2014-10-11T15:50:49+05:00</lastmod>
+    </url>
+    <url>
+        <loc>http://hassaanaliw.github.io/python-challenges/</loc>
+        <lastmod>2014-10-11T15:50:49+05:00</lastmod>
+    </url>
+    <url>
+        <loc>http://hassaanaliw.github.io/</loc>
+        <lastmod>2014-10-11T23:34:24+05:00</lastmod>
+    </url>
+    <url>
+        <loc>http://hassaanaliw.github.io/css/main.css</loc>
+        <lastmod>2014-10-11T19:46:11+05:00</lastmod>
+    </url>
+</urlset>

@@ -1,57 +1,26 @@
-# Build settings
-markdown: redcarpet
-highlighter: pygments
+# Dependencies
+markdown:         redcarpet
+highlighter:      pygments
 
-# Site settings
-title: "Olympia"
-description: > 
-   A Programming Blog by a Python Enthusiast.
+# Permalinks
+permalink:        pretty
+relative_permalinks: true
 
-email: hassaanaliw@gmail.com
-#blog logo
-logo: "/assets/images/rocket-512.png"
-# blog cover
-cover: "/assets/images/rsz_gitwall.png"
+# Setup
+title:            Olympia	
+tagline:          'A Python Blog.'
+description:      'Posts about programming in Python, especially Flask by <a href="https://github.com/hassaanaliw">@hassaanaliw</a>'
+url:              http://hassaanaliw.github.io
+baseurl:          /
 
-name: 'Hassaan Ali Wattoo'
-author: 'Hassaan Ali Wattoo'
-author_image: "/assets/images/0.jpeg"
+author:
+  name:           'Hassaan Ali Wattoo'
+  url:            https://github.com/hassaanaliw
 
-paginate:	5
+paginate:         5
 
+# Custom vars
+version:          2.1.0
 
-  
-
-
-url: "http://hassaanaliw.github.io" # the base hostname & protocol for your site
-baseurl: ""
-
-# social icons and sharing options
-social:
-  - icon:	twitter
-    url:	https://twitter.com/hassaanaliw
-    desc: Follow me on twitter
-    share_url: http://twitter.com/share
-    share_title: ?text=
-    share_link: "&amp;url="
-
-  - icon:	facebook
-    url:	https://facebook.com/hassaan.wattoo
-    desc: Connect with me facebook
-    share_url: //www.facebook.com/sharer.php
-    share_title: ?t=
-    share_link: "&amp;u="
-
-  - icon:	github
-    url:	https://github.com/hassaanaliw
-    desc:	Fork me on github
-    share_url:
-    share_title:
-    share_link:
-
-#  - icon:	google-plus
-#    url:	https://google.com/???
-#    desc:	Add me on google+
-#    share_url:
-#    share_title:
-#    share_link:
+github:
+  repo:           https://github.com/hassaanaliw/hassaanaliw.github.io

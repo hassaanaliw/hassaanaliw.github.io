@@ -12,7 +12,7 @@ Our Logic will consist of two parts:<br/><br/>
 2)Building a web app with Flask.</b></br>
 
 First, let's create a parsing script.
-#Parsing XKCD
+<h3>Parsing XKCD</h3>
 <p>The first part of any scraping operation is to study the HTML Source of our target pages. So open up the page of any comic (<a href="http://xkcd.com/936/">this should do</a>) and start reading its source.
 	There are a few things to note now:</p>
 	<ol style="padding-bottom: 0px;">

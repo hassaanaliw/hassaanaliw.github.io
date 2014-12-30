@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+
+  <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <title>
+    
+      Scrapy Tutorial : Let's Crawl Google Play &middot; Olympia
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/public/css/poole.css">
+  <link rel="stylesheet" href="/public/css/syntax.css">
+  <link rel="stylesheet" href="/public/css/hyde.css">
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Abril+Fatface">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/apple-touch-icon-144-precomposed.png">
+                                 <link rel="shortcut icon" href="/public/favicon.ico">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+</head>
+
+
+  <body>
+
+    <div class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <h1>
+        <a href="/">
+          Olympia
+        </a>
+      </h1>
+      <p class="lead">Posts about programming in Python, especially Flask by <a href="https://github.com/hassaanaliw">@hassaanaliw</a></p>
+    </div>
+
+    <nav class="sidebar-nav">
+      <a class="sidebar-nav-item" href="/">Home</a>
+
+      
+
+      
+      
+        
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="/about/">About</a>
+          
+        
+      
+        
+          
+        
+      
+
+      
+      <a class="sidebar-nav-item" href="https://github.com/hassaanaliw/hassaanaliw.github.io">GitHub project</a>
+      
+    </nav>
+
+    <p>&copy; Hassaan Ali Wattoo 2014. All rights reserved.</p>
+  </div>
+</div>
+
+
+    <div class="content container">
+      <div class="post">
+  <h1 class="post-title">Scrapy Tutorial : Let's Crawl Google Play</h1>
+  <span class="post-date">14 Jul 2014</span>
+  <h3>An Introduction to Scrapy</h3>
+
+<h3>What is Scrapy?</h3>
+
+<p>Scrapy is a fast high-level screen scraping and web crawling framework, used to crawl websites and extract structured data from their pages. It can be used for a wide range of purposes, from data mining to monitoring and automated testing.</p>
+
+<h3>Installation:</h3>
+
+<p>The entire Installation is outlined :: <a href = "http://doc.scrapy.org/en/latest/intro/install.html#intro-install"> In the Scrapy Documentation </a></p>
+
+<h3>Let's Crawl.</h3>
+
+<p>Navigate to a directory where you want to create a project and run 
+
+
+       
+<div class="highlight"><pre><code class="language-python" data-lang="python"><span class="n">scrapy</span> <span class="n">startproject</span> <span class="n">play</span></code></pre></div>
+
+
+
+This should create a project with the name 'play' with a directory structure of :
+<pre>
++-- scrapy.cfg
++-- play
+|   +-- items.py
+|   +-- pipeline.py
+|   +-- settings.py
+|   +-- _init_.py
+|   +-- spiders
+      | +-- _init_.py
+</pre>
+
+Open items.py and change the code to :
+ 
+<div class="highlight"><pre><code class="language-python" data-lang="python"><span class="c"># -*- coding: utf-8 -*-</span>
+
+<span class="c"># Define here the models for your scraped items</span>
+<span class="c">#</span>
+<span class="c"># See documentation in:</span>
+<span class="c"># http://doc.scrapy.org/en/latest/topics/items.html</span>
+
+<span class="kn">import</span> <span class="nn">scrapy</span>
+
+
+<span class="k">class</span> <span class="nc">PlayItem</span><span class="p">(</span><span class="n">scrapy</span><span class="o">.</span><span class="n">Item</span><span class="p">):</span>
+    <span class="n">title</span> <span class="o">=</span> <span class="n">scrapy</span><span class="o">.</span><span class="n">Field</span><span class="p">()</span>
+    <span class="n">link</span> <span class="o">=</span> <span class="n">scrapy</span><span class="o">.</span><span class="n">Field</span><span class="p">()</span></code></pre></div>
+
+
+ Title and link are the two fields we will be scraping from GooglePlay.
+
+
+ Next open the Spiders Folder and create a python file with any name. I will name it : "gp.py"
+
+Open gp.py and import the following :
+
+
+     
+
+<div class="highlight"><pre><code class="language-python" data-lang="python"><span class="kn">from</span> <span class="nn">scrapy.spider</span> <span class="kn">import</span> <span class="n">BaseSpider</span>
+<span class="kn">from</span> <span class="nn">scrapy.selector</span> <span class="kn">import</span> <span class="n">HtmlXPathSelector</span>
+<span class="kn">from</span> <span class="nn">play.items</span> <span class="kn">import</span> <span class="n">PlayItem</span> <span class="c">#remember we declared PlayItem in items.py</span>
+<span class="kn">from</span> <span class="nn">scrapy.http</span> <span class="kn">import</span> <span class="n">Request</span></code></pre></div>
+
+
+Ok , now suppose we want to scrape links and titles from the Finance Category. Let's visit play.google.com and find the link for the category. Ok so the link is :
+
+<a href = "https://play.google.com/store/apps/category/FINANCE"> Play Store Finance Category </a>
+
+<p>Ok so lets create a Finance class. Change gp.py to :
+
+
+<div class="highlight"><pre><code class="language-python" data-lang="python"><span class="kn">from</span> <span class="nn">scrapy.spider</span> <span class="kn">import</span> <span class="n">BaseSpider</span>
+<span class="kn">from</span> <span class="nn">scrapy.selector</span> <span class="kn">import</span> <span class="n">HtmlXPathSelector</span>
+<span class="kn">from</span> <span class="nn">play.items</span> <span class="kn">import</span> <span class="n">PlayItem</span> <span class="c">#remember we declared PlayItem in items.py</span>
+<span class="kn">from</span> <span class="nn">scrapy.http</span> <span class="kn">import</span> <span class="n">Request</span>
+
+<span class="k">class</span> <span class="nc">Finance</span><span class="p">(</span><span class="n">BaseSpider</span><span class="p">):</span>
+    <span class="n">name</span> <span class="o">=</span> <span class="s">&quot;finance&quot;</span> <span class="c">#the name by which we will call the spyder</span>
+    <span class="n">allowed_domains</span>    <span class="o">=</span> <span class="p">[</span><span class="s">&quot;play.google.com&quot;</span><span class="p">]</span>
+    <span class="n">start_urls</span> <span class="o">=</span> <span class="p">[</span><span class="s">&quot;https://play.google.com/store/apps/category/FINANCE&quot;</span><span class="p">]</span></code></pre></div>
+
+
+Now lets write the Parse Function.
+
+NOTE : hxs Is the Selector that will find us the information from our page source. Unfortunately XPath is rather complicated at times and you will have to learn it via some external means.
+
+<br></br>
+<a href = "http://www.w3schools.com/XPath/"> XPath tutorial at w3schools </a>
+<br></br>
+
+
+<div class="highlight"><pre><code class="language-python" data-lang="python"><span class="kn">from</span> <span class="nn">scrapy.spider</span> <span class="kn">import</span> <span class="n">BaseSpider</span>
+<span class="kn">from</span> <span class="nn">scrapy.selector</span> <span class="kn">import</span> <span class="n">HtmlXPathSelector</span>
+<span class="kn">from</span> <span class="nn">play.items</span> <span class="kn">import</span> <span class="n">PlayItem</span> <span class="c">#remember we declared PlayItem in items.py</span>
+<span class="kn">from</span> <span class="nn">scrapy.http</span> <span class="kn">import</span> <span class="n">Request</span>
+
+<span class="k">class</span> <span class="nc">Finance</span><span class="p">(</span><span class="n">BaseSpider</span><span class="p">):</span>
+    <span class="n">name</span> <span class="o">=</span> <span class="s">&quot;finance&quot;</span> <span class="c">#the name by which we will call the spyder</span>
+    <span class="n">allowed_domains</span>    <span class="o">=</span> <span class="p">[</span><span class="s">&quot;play.google.com&quot;</span><span class="p">]</span>
+    <span class="n">start_urls</span> <span class="o">=</span> <span class="p">[</span><span class="s">&quot;https://play.google.com/store/apps/category/FINANCE&quot;</span><span class="p">]</span>
+
+    <span class="k">def</span> <span class="nf">parse</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span><span class="n">response</span><span class="p">):</span>
+      <span class="n">hxs</span> <span class="o">=</span> <span class="n">HtmlXPathSelector</span><span class="p">(</span><span class="n">response</span><span class="p">)</span>
+      <span class="n">titles</span> <span class="o">=</span> <span class="n">hxs</span><span class="o">.</span><span class="n">select</span><span class="p">(</span><span class="s">&#39;//h2/a[@class = &quot;title&quot;]&#39;</span><span class="p">)</span>
+
+<span class="c">#This Basically searches the html for a tags with the &#39;title&#39; class.</span>
+<span class="c">#Furthermore this &quot;&lt;a&gt;&quot; tag is the child of a H2 tag.</span>
+
+      <span class="k">for</span> <span class="n">title</span> <span class="ow">in</span> <span class="n">titles</span> <span class="p">:</span>
+         <span class="n">item</span> <span class="o">=</span> <span class="n">PlayItem</span><span class="p">()</span>
+         <span class="n">item</span><span class="p">[</span><span class="s">&quot;title&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">title</span><span class="o">.</span><span class="n">select</span><span class="p">(</span><span class="s">&quot;text()&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">extract</span><span class="p">()</span>
+         <span class="n">item</span> <span class="p">[</span><span class="s">&quot;link&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="s">&#39;https://play.google.com&#39;</span><span class="o">+</span><span class="n">title</span><span class="o">.</span><span class="n">select</span><span class="p">(</span><span class="s">&quot;@href&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">extract</span><span class="p">()[</span><span class="mi">0</span><span class="p">]</span>
+          <span class="k">yield</span> <span class="n">item</span></code></pre></div>
+
+<br></br>
+
+
+Let me explain the "for title in titles" part.
+<br></br>
+
+item['title'] extracts the text from the aforementionted "a" tag.
+item['link'] extracts the href from the "a" tag.
+These are assigned to the title and link declared as PlayItem() in items.py.
+Then they are yielded.
+<br></br>
+
+Ok so our code is done.
+
+Go back to the root directory of play and run 
+
+
+<div class="highlight"><pre><code class="language-python" data-lang="python"><span class="n">scrapy</span> <span class="n">crawl</span> <span class="n">finance</span> <span class="o">-</span><span class="n">o</span> <span class="n">data</span><span class="o">.</span><span class="n">csv</span> <span class="o">-</span><span class="n">t</span> <span class="n">csv</span></code></pre></div>
+
+
+This outputs our data to Data.csv file.
+
+This concludes the tutorial. Now go scrape!
+
+
+</p>
+
+</div>
+
+<div id="disqus_thread"></div>
+		    <script type="text/javascript">
+		       
+		     var disqus_shortname = 'olympiacode'; 
+		        (function() {
+		            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+		            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+		            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+		        })();
+		    </script>
+		    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+<div class="related">
+  <h2>Related Posts</h2>
+  <ul class="related-posts">
+    
+      <li>
+        <h3>
+          <a href="/python/2014/10/12/building-an-xkcd-randomiser-with-flask-and-lxml/">
+            Building a XKCD Randomiser with Flask and lxml
+            <small>12 Oct 2014</small>
+          </a>
+        </h3>
+      </li>
+    
+      <li>
+        <h3>
+          <a href="/python/2014/10/11/getting-started-with-flask/">
+            Getting Started with Flask
+            <small>11 Oct 2014</small>
+          </a>
+        </h3>
+      </li>
+    
+  </ul>
+</div>
+
+    </div>
+
+  </body>
+</html>
