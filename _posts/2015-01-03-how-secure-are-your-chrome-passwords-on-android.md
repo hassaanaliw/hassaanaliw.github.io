@@ -81,7 +81,7 @@ Then I entered 5 different username/password combinations and saved them in Chro
 </tr>	
 </tbody></table>
 
-I then sent the database to my computer and opened it up with SQLote Browser and this is the result:
+I then sent the database to my computer and opened it up with SQLite Browser and this is the result:
 
 <img src="/assets/article_images/Screenshot from 2015-01-04 18:54:46.png" alt="Drawing" />
 
