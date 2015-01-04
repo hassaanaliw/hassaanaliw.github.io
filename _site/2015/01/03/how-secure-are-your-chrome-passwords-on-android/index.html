@@ -79,15 +79,103 @@
       <div class="post">
   <h1 class="post-title">How secure are your Chrome Passwords on Android?</h1>
   <span class="post-date">03 Jan 2015</span>
-  <p>Not very it would seem.</p>
+  <p>If you have ever provided an app root access, not very secure it would seem.</p>
 
-<h2>Storage</h2>
+<p>Pre-Summary:</p>
+
+<ul>
+<li>On Android and on Ubuntu, Chrome does not encrypt saved passwords</li>
+<li>These passwords are stored in a database called LoginData.</li>
+<li>The passwords can be easily viewed with a database browser.</li>
+</ul>
+
+<h2 id="storage">Storage</h2>
 
 <p>When you enter a password for a website into <a href="https://play.google.com/store/apps/details?id=com.android.chrome&amp;hl=en">Chrome on Android</a>, chances are you see a prompt to save your password. </p>
 
-<p><img src="/assets/article_images/Screenshot_2015-01-03-23-45-50.png " alt="Drawing" style="width: 300px; height:500px"/></p>
+<p><img src="/assets/article_images/Screenshot_2015-01-03-23-45-50.png " alt="Drawing" style="width: 300px; height:500px; margin-left:25%"/></p>
 
-<p>If you click yes, Chrome will save information about the page such as the names of the form elements as well as the <strong>password</strong> to a database called LoginData.</p>
+<p>If you click yes, Chrome will save information about the page such as the names of the form elements as well as the <strong>password</strong> to a database called <strong>LoginData</strong>.</p>
+
+<p>This database resides in the /data/data directory, so to access it, root access <strong>is required</strong></p>
+
+<p>The full path to the database is:</p>
+
+<blockquote>
+<p>/data/data/com.android.chrome/app_chrome/Default/Login Data</p>
+</blockquote>
+
+<p><img src="/assets/article_images/Screenshot_2015-01-03-23-10-48.png" style="width:300px; height:500px; margin-left:25%" /></p>
+
+<h2 id="the-problem">The Problem</h2>
+
+<p>If you haven&#39;t rooted your phone or just don&#39;t give root access to apps, you will probably be fine.</p>
+
+<p><strong>However</strong>, any app with root access can access the database with the passwords.</p>
+
+<p>And the problem is, Chrome stores these passwords in the database in <strong>PlainText</strong>.</p>
+
+<p>If you have rooted your phone and want to test this, retrieve the database from the aforementioned directory and transfer it to your computer.</p>
+
+<p>Then load the DataBase using <a href="http://sqlitebrowser.org/">SQLite Browser</a> and open the Logins table.</p>
+
+<p>Here you should be able to see all your saved usernames and passwords.</p>
+
+<h2 id="the-test.">The Test.</h2>
+
+<p>To test this, I set up a simple website form on <a href="https://droidpw.herokuapp.com">Heroku</a></p>
+
+<p><img src="/assets/article_images/Screenshot_2015-01-04-18-16-33.png" alt="Drawing" style="width: 300px; height:500px; margin-left:25%"/></p>
+
+<p>Then I entered 5 different username/password combinations and saved them in Chrome</p>
+
+<table><thead>
+<tr>
+<th>Username</th>
+<th>Password</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>mine</td>
+<td>craft</td>
+</tr>
+<tr>
+<td>hello</td>
+<td>hi</td>
+</tr>
+<tr>
+    <td>usb</td>
+    <td>mouse</td>
+</tr>
+<tr>
+    <td>droid</td>
+    <td>pw</td>
+</tr>
+<tr>
+    <td>reddit</td>
+    <td>android</td>
+</tr>   
+</tbody></table>
+
+<p>I then sent the database to my computer and opened it up with SQLote Browser and this is the result:</p>
+
+<p><img src="/assets/article_images/Screenshot from 2015-01-04 18:54:46.png" alt="Drawing" /></p>
+
+<h2 id="conclusion">Conclusion</h2>
+
+<p>As long as you are careful with/do not use root access, you should be fine.</p>
+
+<p>However, it still seems quite scary that Google itself isn&#39;t encrypting the passwords.</p>
+
+<p>The news for Ubuntu Chromium isn&#39;t much better either. The daabase located at</p>
+
+<blockquote>
+<p>/home/username/.config/chromium/Default/Login Data</p>
+</blockquote>
+
+<p>can be viewed freely as well with the database browser linked above .</p>
+
+<p>On Windows, it is atleast encrypted with the WinCrypt API. But these passwords can be decrypted very easily with a simple <a href="https://github.com/hassaanaliw/chromepass">python script</a>.</p>
 
 </div>
 
