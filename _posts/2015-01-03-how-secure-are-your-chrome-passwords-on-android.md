@@ -19,7 +19,7 @@ Storage
 
 When you enter a password for a website into [Chrome on Android](https://play.google.com/store/apps/details?id=com.android.chrome&hl=en), chances are you see a prompt to save your password. 
 
-<img src="/assets/article_images/Screenshot_2015-01-03-23-45-50.png " alt="Drawing" style="width: 300px; height:500px; margin-left:25%"/>
+<img src="/assets/article_images/Screenshot_2015-01-03-23-45-50.png " alt="Drawing" style="width: 300px; height:500px;"/>
 
 If you click yes, Chrome will save information about the page such as the names of the form elements as well as the <strong>password</strong> to a database called __LoginData__.
 
@@ -29,7 +29,7 @@ The full path to the database is:
 
 >/data/data/com.android.chrome/app_chrome/Default/Login Data
 
-<img src="/assets/article_images/Screenshot_2015-01-03-23-10-48.png" style="width:300px; height:500px; margin-left:25%" />
+<img src="/assets/article_images/Screenshot_2015-01-03-23-10-48.png" style="width:300px; height:500px; " />
 
 ##The Problem
 
@@ -49,7 +49,7 @@ Here you should be able to see all your saved usernames and passwords.
 
 To test this, I set up a simple website form on [Heroku](https://droidpw.herokuapp.com)
 
-<img src="/assets/article_images/Screenshot_2015-01-04-18-16-33.png" alt="Drawing" style="width: 300px; height:500px; margin-left:25%"/>
+<img src="/assets/article_images/Screenshot_2015-01-04-18-16-33.png" alt="Drawing" style="width: 300px; height:500px;"/>
 
 Then I entered 5 different username/password combinations and saved them in Chrome
 
