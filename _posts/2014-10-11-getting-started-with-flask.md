@@ -6,10 +6,7 @@ category: python
 tags: [python,flask,web-development]
 ---
 
-<style type="text/css">
-body{
-	font-size:18px;
-}
+
 
 </style>
 <h3>What is Flask?</h3>

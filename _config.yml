@@ -1,28 +1,15 @@
-# Dependencies
-markdown:         redcarpet
-redcarpet:
-  extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "tables", "with_toc_data"]
-highlighter:      pygments
+name: Olympia
+description: Blogging about Python and Flask.
+meta_description: "Your Pythonic blog to all things Flask."
 
-# Permalinks
-permalink:        pretty
-relative_permalinks: true
+markdown: redcarpet
+highlighter: pygments
+logo: false
+paginate: 15
+baseurl: /
+domain_name: 'https://hassaanaliw.github.io'
+google_analytics: 'UA-54672427-1'
 
-# Setup
-title:            Olympia	
-tagline:          'A Python Blog.'
-description:      'Posts about programming in Python, especially Flask by <a href="https://github.com/hassaanaliw">@hassaanaliw</a>'
-url:              http://hassaanaliw.github.io
-baseurl:          /
-
-author:
-  name:           'Hassaan Ali Wattoo'
-  url:            https://github.com/hassaanaliw
-
-paginate:         5
-
-# Custom vars
-version:          2.1.0
-
-github:
-  repo:           https://github.com/hassaanaliw/hassaanaliw.github.io
+# Details for the RSS feed generator
+url:            'https://hassaanaliw.github.io'
+author:         'Hassaan Ali Wattoo'

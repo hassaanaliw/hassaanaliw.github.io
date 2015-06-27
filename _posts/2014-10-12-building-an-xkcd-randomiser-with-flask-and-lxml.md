@@ -3,7 +3,7 @@ layout: post
 title: "Building a XKCD Randomiser with Flask and lxml"
 description: "A tutorial about scraping XKCD and displaying results as a web app with Flask."
 category: python  
-tags: []
+tags: [flask]
 ---
 
 In this tutorial, we will be scraping xkcd for its brilliant comics and displaying ten random ones on our website with Flask.
