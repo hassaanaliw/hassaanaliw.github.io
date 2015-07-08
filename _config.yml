@@ -7,9 +7,9 @@ highlighter: pygments
 logo: false
 paginate: 15
 baseurl: /
-domain_name: 'https://hassaanaliw.github.io'
+domain_name: 'http://hassaanaliw.me'
 google_analytics: 'UA-54672427-1'
 
 # Details for the RSS feed generator
-url:            'https://hassaanaliw.github.io'
+url:            'http://hassaanaliw.me'
 author:         'Hassaan Ali Wattoo'
