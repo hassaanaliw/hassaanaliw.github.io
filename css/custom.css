@@ -6,3 +6,7 @@
 .projects li{
 	list-style-type: none;
 }
+
+.wrapper-large{
+	padding: 3.2rem 2rem;
+}
