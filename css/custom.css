@@ -13,6 +13,10 @@
     box-shadow: 0px 0px 2px #868686;
 }
 
+body{
+	transition: background 4s;
+}
+
 .projects li:hover{
 	background: darkslateblue;
 }
@@ -43,4 +47,19 @@ h3{
 	padding-bottom: 20px;
 	padding-right: 10px;
 	padding-left: 10px;
+}
+
+.theta{
+	background: black;
+
+}
+#theta{
+	margin-top: 450px;
+    text-align: center;
+    transition: display 6s;
+}
+
+.pixel-theta{
+	color: #ddd;
+	font-size: 20em;
 }
