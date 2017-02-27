@@ -1,4 +1,4 @@
-var seq = "th"
+var seq = "theta"
 var input = ""
 window.addEventListener("keypress", function(e) {
     input += String.fromCharCode(e.keyCode)
