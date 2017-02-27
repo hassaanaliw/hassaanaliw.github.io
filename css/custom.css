@@ -13,6 +13,20 @@
     box-shadow: 0px 0px 2px #868686;
 }
 
+.projects li:hover{
+	background: darkslateblue;
+}
+
+.projects li:hover a,li:hover{
+	color: white;
+}
+
+.projects li a{
+	width: 100%;
+    display: inline-block;
+    height: 100%;
+}
+
 a{
 	text-decoration: none;
 }
