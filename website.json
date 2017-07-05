@@ -181,16 +181,6 @@
           "uri": "spotify:track:1eh4iPma8RQsu6sjKrMZ8p"
         },
         {
-          "album": "Blank Face LP",
-          "name": "Lord Have Mercy",
-          "uri": "spotify:track:3uu93VCGbNfkXqUuDQNqaT",
-          "video": "https://www.youtube.com/watch?v=N_WNOc8rjiQ",
-          "artists": [
-            "ScHoolboy Q"
-          ],
-          "id": "3uu93VCGbNfkXqUuDQNqaT"
-        },
-        {
           "album": "good kid, m.A.A.d city (Deluxe)",
           "name": "Sing About Me, I'm Dying Of Thirst",
           "uri": "spotify:track:3q2v8QaTnHLveAQzR6gvYm",
@@ -217,6 +207,7 @@
           ],
           "id": "0OR9htKEoFxSXDPYwRaFoC",
           "name": "Six Day War",
+          "video":"https://www.youtube.com/watch?v=GWmZhLjT7Uo",
           "uri": "spotify:track:0OR9htKEoFxSXDPYwRaFoC"
         },
         {
@@ -226,6 +217,7 @@
           ],
           "id": "5e9TFTbltYBg2xThimr0rU",
           "name": "The Chain - 2004 Remastered Edition",
+          "video":"https://www.youtube.com/watch?v=xcw6q0Z8uTk",
           "uri": "spotify:track:5e9TFTbltYBg2xThimr0rU"
         },
         {
@@ -260,6 +252,7 @@
           ],
           "id": "4tQcyj5488alHT1ZgFduzn",
           "name": "How Much A Dollar Cost",
+          "music":"http://www.1songday.com/wp-content/uploads/2015/03/11-How-Much-A-Dollar-Cost.mp3",
           "uri": "spotify:track:4tQcyj5488alHT1ZgFduzn"
         },
         {
@@ -324,6 +317,7 @@
             "20syl"
           ],
           "id": "2WW9pyW0XcEGELGwY3kGQq",
+          "video":"https://www.youtube.com/watch?v=vL3NKJIIZe0",
           "name": "It’s Only (feat. Zyra) - 20syl Remix",
           "uri": "spotify:track:2WW9pyW0XcEGELGwY3kGQq"
         },
