@@ -163,6 +163,47 @@
     margin-bottom: 0;
 }
 
+.blue .title {
+    background: repeating-linear-gradient(45deg, #2196F3, #1f91ec 12px, #2884cd 121px, #05bbd9 11px);
+}
+
+.blue .tag:hover {
+    background-color: #2196F3;
+    color: white;
+}
+
+.blue .button{
+    background: #2196F3;
+}
+
+.yellow .title {
+    background: repeating-linear-gradient(45deg, #FFEB3B, #FFEB3B 12px, #eeca49 121px, #3F51B5 11px);
+    color: #1e1d1dcc;
+}
+
+.yellow .tag:hover{
+    background: #FFEB3B;
+    color: black;
+}
+
+.yellow .button{
+    background: #FFEB3B;
+    color: black;
+}
+
+.orange .title {
+    background: repeating-linear-gradient(45deg, #de3905, #FF5722 12px, #FF5722 121px, #05bbd9 11px);
+}
+
+.orange .tag:hover{
+    background: #de3905;
+    color: white;
+}
+
+.orange .button{
+    background: #de3905;
+}
+
 .card .title h3 {
     font-size: 18px;
     font-family: "Google Sans", "Futura", "Open Sans", sans-serif;
