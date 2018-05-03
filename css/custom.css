@@ -45,7 +45,6 @@
     margin: 35px;
 }
 
-/* Larger than tablet */
 
 @media (max-width: 917px) {
     .hide-mobile {
@@ -54,6 +53,10 @@
 
     .name h2 {
         white-space: normal;
+    }
+
+    .cards{
+        margin-top: 11rem !important;
     }
 }
 
