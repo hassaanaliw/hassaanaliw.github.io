@@ -45,7 +45,6 @@
     margin: 35px;
 }
 
-
 @media (max-width: 917px) {
     .hide-mobile {
         display: none !important;
@@ -55,7 +54,7 @@
         white-space: normal;
     }
 
-    .cards{
+    .cards {
         margin-top: 11rem !important;
     }
 }
@@ -175,7 +174,7 @@
     color: white;
 }
 
-.blue .button{
+.blue .button {
     background: #2196F3;
 }
 
@@ -184,12 +183,12 @@
     color: #1e1d1dcc;
 }
 
-.yellow .tag:hover{
+.yellow .tag:hover {
     background: #FFEB3B;
     color: black;
 }
 
-.yellow .button{
+.yellow .button {
     background: #FFEB3B;
     color: black;
 }
@@ -198,12 +197,12 @@
     background: repeating-linear-gradient(45deg, #de3905, #FF5722 12px, #FF5722 121px, #05bbd9 11px);
 }
 
-.orange .tag:hover{
+.orange .tag:hover {
     background: #de3905;
     color: white;
 }
 
-.orange .button{
+.orange .button {
     background: #de3905;
 }
 
@@ -274,11 +273,12 @@
 **************************/
 
 .button {
-    float: right;
+    float: left;
+    margin-top: 32px;
     margin-bottom: 10px;
     margin-right: 20px;
     text-decoration: none;
-    background: turquoise;
+    background: #2570ce;
     color: white;
     border-radius: 4px;
     font-size: 11px;
@@ -290,4 +290,67 @@
     color: white;
 }
 
+/**************************
+      NON-CS Cards
+**************************/
 
+#architecture-card-image {
+    background: url(../images/arch1.png);
+
+}
+
+#ngp-card-image {
+    background:  url(../images/sts-poster.png);
+
+}
+
+#ccp-card-image {
+    background:  url(../images/flyerccp.png);
+}
+
+#placeholder-card-image {
+    background-image: linear-gradient( 135deg, #52E5E7 10%, #130CB7 100%);
+}
+
+.left-image {
+    min-height: 265px;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+}
+
+.non-cs-card-title h3 {
+    text-align: left;
+    padding-top: 25px;
+    font-family: "Google Sans", "Futura", sans-serif;
+    font-weight: bold;
+    font-size: 32px;
+    margin-bottom: 0;
+}
+
+.non-cs-card-title h5 {
+    padding-top: 5px;
+    text-align: left;
+    font-family: "Google Sans", "Futura", sans-serif;
+    font-size: 17px;
+    color: #6f6f6f;
+}
+
+.non-cs-card-desc {
+    padding-top: 5px;
+    font-size: 14px;
+    text-align: left;
+    padding-right: 25px;
+    font-family: "Lato",sans-serif;
+    color: #222
+}
+
+.card {
+}
+
+@media (max-width: 543px) {
+    .non-cs-card-title {
+        padding: 0 20px;
+        padding-bottom: 20px;
+
+    }
+}
