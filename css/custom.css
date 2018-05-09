@@ -295,17 +295,17 @@
 **************************/
 
 #architecture-card-image {
-    background: url(../images/arch1.png);
+    background: url(../images/arch1.jpg);
 
 }
 
 #ngp-card-image {
-    background:  url(../images/sts-poster.png);
+    background:  url(../images/sts-poster.jpg);
 
 }
 
 #ccp-card-image {
-    background:  url(../images/flyerccp.png);
+    background:  url(../images/flyerccp.jpg);
 }
 
 #placeholder-card-image {
