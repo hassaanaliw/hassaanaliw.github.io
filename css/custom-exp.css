@@ -1,0 +1,130 @@
+/* Formatting CSS */
+
+body {
+}
+
+.navbar {
+    background: black;
+
+}
+
+.navbar-link {
+    color: white;
+}
+
+.holder {
+    margin-top: 15rem;
+}
+
+.cards {
+    margin-top: 0 !important;
+}
+
+/* Exp Cards */
+.exp-card {
+    min-height: 250px;
+    background: black;
+    text-align: center;
+    margin-bottom: 25px;
+    border-bottom: 24px solid turquoise;
+
+}
+
+.exp-card-desc-center {
+    padding: 10px 40px;
+    color: #eeeeee;
+    display: none;
+}
+
+.exp-card-date-center {
+    color: #eeeeee;
+    font-family: Futura, sans-serif;
+    font-size: 12px;
+}
+
+.exp-card:before {
+    content: ' ';
+    display: inline-block;
+    vertical-align: middle; /* vertical alignment of the inline element */
+    height: 100%;
+}
+
+.exp-card:hover {
+    transform: scale(1.2);
+    transition-duration: 1.2s;
+    background: linear-gradient(
+            rgba(0, 0, 0, 0.7),
+            rgba(0, 0, 0, 0.7)
+    ), url("../images/arch1.jpg");
+    background-position: bottom;
+    background-size: cover;
+}
+
+#living-arts-ccp:hover {
+    transform: scale(1.2);
+    transition-duration: 1.2s;
+    background: linear-gradient(
+            rgba(0, 0, 0, 0.7),
+            rgba(0, 0, 0, 0.7)
+    ), url("../images/flyerccp.jpg");
+    background-size: cover;
+}
+
+#gradeguide:hover {
+    transform: scale(1.2);
+    transition-duration: 1.2s;
+    background-image: linear-gradient(135deg, #3B2667 60%, #BC78EC 100%);
+}
+
+#chromepass:hover {
+    transform: scale(1.2);
+    transition-duration: 1.2s;
+    background-image: linear-gradient(135deg, #92FFC0 10%, #002661 100%);
+}
+
+#halal:hover {
+    transform: scale(1.2);
+    transition-duration: 1.2s;
+    background-image: linear-gradient(60deg, #F44336 10%, #002661 100%);
+}
+
+#caption-gen:hover {
+    transform: scale(1.2);
+    transition-duration: 1.2s;
+    background-image: linear-gradient(250deg, #EB5260 33%, #130b0b 74%);
+}
+
+.exp-card-title-big-center {
+    text-align: -webkit-center;
+    padding-top: 75px;
+    color: white;
+    font-family: "Google Sans", "Futura", sans-serif;
+    font-size: 42px;
+    font-weight: bold;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.exp-card:hover .exp-card-title-big-center {
+    transition: 1s;
+    color: #eeeeee;
+}
+
+.exp-card:hover .exp-card-desc-center {
+    display: block;
+    font-size: 12px;
+    font-family: "Futura", sans-serif;
+    transition: 0.6s;
+    text-align: -webkit-right;
+}
+
+.exp-card:hover .exp-card-date-center {
+    display: block;
+    transition: 0.7s;
+}
+
+.dark-block {
+    background: #0000008c;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}

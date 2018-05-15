@@ -5,8 +5,10 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Project Portfolio for Hassaan Ali Wattoo, an undergrad Computer Science
-    Student at the University of Michigan and Software Developer.">
+
+    <meta name="description" content="CS Projects Hassaan Ali Wattoo has worked on">
+
+
     <title>Projects | Hassaan Ali Wattoo</title>
 
     <link rel="apple-touch-icon" sizes="57x57" href="logo/apple-icon-57x57.png">
@@ -32,6 +34,7 @@
     <link rel="stylesheet" href="css/skeleton.css">
 
     <link href="css/custom.css" rel='stylesheet' type='text/css'>
+    <link href="css/custom-exp.css" rel="stylesheet" type="text/css">
 
 </head>
 
@@ -47,7 +50,8 @@
                     <a class="navbar-link" style="background: turquoise; color: white;" href="./projects.html"
                        data-popover="#codeNavPopover">Projects</a>
                 </li>
-                <li class="navbar-item hide-mobile"><a class="navbar-link" href="./noncs.html">Non-CS Stuff</a></li>
+                <li class="navbar-item hide-mobile"><a class="navbar-link"
+                                                       href="./noncs.html">Non-CS Stuff</a></li>
                 <li class="navbar-item hide-mobile">
                     <a class="navbar-link" href="#" data-popover="#moreNavPopover">Blog</a>
 
@@ -56,83 +60,63 @@
         </div>
     </nav>
 
-
-    <div class="row cards">
-        <div class="twelve columns card">
-            <div class="four columns left-image" id="placeholder-card-image">
-
-            </div>
-            <div class="eight columns non-cs-card-title">
-                <h3>GradeGuide</h3>
-                <h5 class="non-cs-card-subtitle">
-                    October 2017 - Present
-                </h5>
-
-                <div class="non-cs-card-desc">
-                    Grade Guide allows students to view grade distributions for any class on offer at the University of Michigan and
-                    to compare this data for up to four classes at once.
-
-
+    <div class="holder">
+        <div class="row cards exp-cards">
+            <div class="six columns exp-card" id="gradeguide"
+                 onclick="window.open('https://gradeguide.com','mywindow');"
+                 style="cursor: pointer;">
+                <div class="exp-card-title-big-center">
+                    GradeGuide.
+                </div>
+                <div class="exp-card-date-center">
+                    November, 2017 - Active
                 </div>
 
-                <a href="https://gradeguide.com/" target="_blank" class="button">Visit</a>
-
-
-
             </div>
 
-
-        </div>
-
-        <div class="twelve columns card">
-            <div class="four columns left-image" id="placeholder-card-image">
-
-            </div>
-            <div class="eight columns non-cs-card-title">
-                <h3>CaptionGen</h3>
-                <h5 class="non-cs-card-subtitle">
-                    October - November 2017
-                </h5>
-
-                <div class="non-cs-card-desc">
-                    A Javascript and Flask (Python) based web application that leverages Google Vision 
-                    APIs and scrapes popular quotes websites and lyric websites to generate image captions.
+            <div class="six columns exp-card" id="caption-gen"
+                 onclick="window.open('https://project.wattoo.me/captions','mywindow');"
+                 style="cursor: pointer;">
+                <div class="exp-card-title-big-center">
+                    CaptionGen.
                 </div>
-
-                <a href="https://projects.hassaanaliw.me/captions" target="_blank" class="button">Visit</a>
-
-
+                <div class="exp-card-date-center">
+                    May, 2017 - August, 2017
+                </div>
             </div>
-
-
 
         </div>
 
 
-        <div class="twelve columns card">
-            <div class="four columns left-image" id="placeholder-card-image">
-
-            </div>
-            <div class="eight columns non-cs-card-title">
-                <h3>ChromePass</h3>
-                <h5 class="non-cs-card-subtitle">
-                    October - November 2017
-                </h5>
-
-                <div class="non-cs-card-desc">
-                    A Python script for extracting passwords saved in the Google Chrome browser on both Windows and 
-                    Unix systems. Part of a larger forensic software for the Google Chrome browser.
+        <div class="row cards exp-cards">
+            <div class="six columns exp-card" id="halal"
+                 onclick="window.open('https://halal.wattoo.me/','mywindow');"
+                 style="cursor: pointer;">
+                <div class="exp-card-title-big-center">
+                    Halal @ UMich.
+                </div>
+                <div class="exp-card-date-center">
+                    May, 2018 - Active
                 </div>
 
-                <a href="https://github.com/hassaanaliw/chromepass" target="_blank" class="button">Visit</a>
-
-            
             </div>
 
+            <div class="six columns exp-card" id="chromepass"
+                 onclick="window.open('https://github.com/hassaanaliw/chromepass','mywindow');"
+                 style="cursor: pointer;">
+                <div class="exp-card-title-big-center">
+                    ChromePass.
+                </div>
+                <div class="exp-card-date-center">
+                    January, 2015 - January, 2016
+                </div>
+            </div>
 
         </div>
+
 
     </div>
+
 
 </div>
 
