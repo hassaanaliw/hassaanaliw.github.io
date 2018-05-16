@@ -23,7 +23,10 @@ body {
 /* Exp Cards */
 .exp-card {
     min-height: 250px;
-    background: black;
+    background-image: linear-gradient( rgba(0, 0, 0, 0.13), rgba(23, 76, 78, 0.7)), url(../images/bottom.svg);
+    background-size: cover;
+    background-color: black;
+    background-position: bottom;
     text-align: center;
     margin-bottom: 25px;
     border-bottom: 24px solid turquoise;
