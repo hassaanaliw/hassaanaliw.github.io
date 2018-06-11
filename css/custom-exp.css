@@ -23,7 +23,7 @@ body {
 /* Exp Cards */
 .exp-card {
     min-height: 250px;
-    background-image: linear-gradient( rgba(0, 0, 0, 0.13), rgba(23, 76, 78, 0.7)), url(../images/bottom.svg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.13), rgba(23, 76, 78, 0.7)), url(../images/bottom.svg);
     background-size: cover;
     background-color: black;
     background-position: bottom;
@@ -53,7 +53,6 @@ body {
 }
 
 .exp-card:hover {
-    transform: scale(1.2);
     transition-duration: 1.2s;
     background: linear-gradient(
             rgba(0, 0, 0, 0.7),
@@ -64,7 +63,6 @@ body {
 }
 
 #living-arts-ccp:hover {
-    transform: scale(1.2);
     transition-duration: 1.2s;
     background: linear-gradient(
             rgba(0, 0, 0, 0.7),
@@ -74,25 +72,21 @@ body {
 }
 
 #gradeguide:hover {
-    transform: scale(1.2);
     transition-duration: 1.2s;
     background-image: linear-gradient(135deg, #3B2667 60%, #BC78EC 100%);
 }
 
 #chromepass:hover {
-    transform: scale(1.2);
     transition-duration: 1.2s;
     background-image: linear-gradient(135deg, #92FFC0 10%, #002661 100%);
 }
 
 #halal:hover {
-    transform: scale(1.2);
     transition-duration: 1.2s;
     background-image: linear-gradient(60deg, #F44336 10%, #002661 100%);
 }
 
 #caption-gen:hover {
-    transform: scale(1.2);
     transition-duration: 1.2s;
     background-image: linear-gradient(250deg, #EB5260 33%, #130b0b 74%);
 }
