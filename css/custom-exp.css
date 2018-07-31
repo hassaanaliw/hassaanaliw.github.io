@@ -43,6 +43,7 @@ body {
     color: #eeeeee;
     font-family: Futura, sans-serif;
     font-size: 12px;
+    padding-bottom: 50px;
 }
 
 .exp-card:before {
