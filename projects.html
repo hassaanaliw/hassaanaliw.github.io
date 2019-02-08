@@ -35,7 +35,6 @@
 
     <link href="css/custom.css" rel='stylesheet' type='text/css'>
     <link href="css/custom-exp.css" rel="stylesheet" type="text/css">
-    <link href="css/modal.css" rel="stylesheet" type="text/css">
 
 </head>
 
@@ -65,9 +64,7 @@
     <div class="holder">
         <div class="row cards exp-cards">
             <div class="six columns exp-card" id="gradeguide"
-                 data-title="GradeGuide" data-desc="Grade Guide allows students to view grade
-                 distributions for any class on offer at the University of Michigan"
-                 data-url="https://gradeguide.com/"
+                 data-title="GradeGuide" onclick="window.location = '/projects/gradeguide.html'"
                  style="cursor: pointer;">
                 <div class="exp-card-title-big-center">
                     GradeGuide.
@@ -152,49 +149,12 @@
 
 </div>
 
-<div class="modal micromodal-slide" id="modal-1" aria-hidden="true">
-    <div class="modal__overlay" tabindex="-1" data-micromodal-close>
-      <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
-        <header class="modal__header">
-          <h2 class="modal__title" id="modal-1-title">
-            Micromodal
-          </h2>
-          <button class="modal__close" aria-label="Close modal" data-micromodal-close></button>
-        </header>
-        <main class="modal__content" id="modal-1-content">
-          <p>
-            Try hitting the <code>tab</code> key and notice how the focus stays within the modal itself. Also, <code>esc</code> to close modal.
-          </p>
-        </main>
-        <footer class="modal__footer">
-          <a id="modal_visit_link" href="#"><button class="modal__btn modal__btn-primary">Visit</button></a>
-          <button class="modal__btn" data-micromodal-close aria-label="Close this dialog window">Close</button>
-        </footer>
-      </div>
-    </div>
-  </div>
 
-
-<script type="text/javascript" src="https://unpkg.com/micromodal/dist/micromodal.min.js"></script>
 <script
   src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
   integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
   crossorigin="anonymous"></script>
 
-
-<script type="text/javascript">
-
-$(document).ready(function(){
-    MicroModal.init(); // [1]
-    $('.exp-card').click(function(e) {  
-      MicroModal.show("modal-1");
-      $("#modal-1-title").text($(this).attr("data-title"));
-      $("#modal-1-content").text($(this).attr("data-desc"));
-      console.log($("#modal_visit_link").attr("href"));
-      $("#modal_visit_link").attr("href", $(this).attr("data-url"));
-    });
-});
-</script>
 
 </body>
 
