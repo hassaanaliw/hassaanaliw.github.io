@@ -21,7 +21,7 @@
   <body>
         <div class="container-fluid">
                 <div class="row no-gutter">
-                  <div class="col-md-5 col-lg-7 bg-image">
+                  <div class="d-none d-sm-block col-md-5 col-lg-7 bg-image" id="project-images">
                     <div class="project-image-holder">
                         <img src="images/gg-home.png" class="img-fluid project-image">
                     </div>
@@ -36,16 +36,16 @@
                             <img src="images/gg-spotlight.png" class="img-fluid project-image">
                     </div>
                   </div>
-                  <div class="col-md-7 col-lg-5 project-description-holder">
+                  <div class="col-md-7 col-lg-5 project-description-holder" id="project-description">
                     <div class="login d-flex align-items-center py-5">
                       <div class="container">
                         <div class="row">
                           <div class="col-md-11 col-lg-11 mx-auto">
                             <div class="row">
-                            <div class="col-lg-8 col-md-7">
+                            <div class="col-lg-7 col-md-7">
                             <h3 class="login-heading mb-4">GradeGuide</h3>
                             </div>
-                            <div class="col-lg-4 col-md-5">
+                            <div class="col-lg-5 col-md-5">
                                     <button onclick="window.location = 'http://gradeguide.com'" class="btn btn-lg btn-primary btn-block btn-login text-uppercase font-weight-bold mb-2" type="submit">
                                         Visit Live
                                     </button>
@@ -98,5 +98,11 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.bundle.min.js"></script>
+
+    <script type="text/javascript">
+    let imagesDiv = document.getElementById('project-images');
+    let descDiv   = document.getElementById('project-description');
+    imagesDiv.style.height = descDiv.descDiv.height;
+    </script>
   </body>
 </html>

@@ -1,3 +1,7 @@
+body{
+  overflow: hidden;
+}
+
 :root {
     --input-padding-x: 1.5rem;
     --input-padding-y: 0.75rem;
@@ -100,7 +104,10 @@
   
   .project-description-holder{
     border-left: 6px solid #0077ff;
-    box-shadow: -3px 0px 3px 0px #adadad
+    box-shadow: -3px 0px 3px 0px #adadad;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    height: 100vh;
   }
 
   .project-description{
