@@ -1,21 +1,224 @@
-
 .header {
     text-align: center;
     margin-top: 18rem;
-
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .name h2 {
     display: inline-block;
     overflow: hidden;
-    max-width: 500px;
-    border-right: .15em solid orange;
+    max-width: fit-content;
+    border-right: .15em solid #635BFF;
     margin: 0 auto;
     white-space: nowrap;
     letter-spacing: .15em;
     animation: typing 3.5s steps(100, end),
     blink-caret .75s step-end infinite;
+    font-size: 3.5rem;
+    margin-bottom: 2rem;
+    color: #1A1F36;
+    position: relative;
+    font-weight: 700;
+    text-shadow: 0 2px 10px rgba(99, 91, 255, 0.1);
+    transform: translateY(0);
+    transition: transform 0.3s ease;
+}
 
+.name h2::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(99, 91, 255, 0.2),
+        transparent
+    );
+    animation: shimmer 3s infinite;
+}
+
+@keyframes shimmer {
+    0% {
+        left: -100%;
+    }
+    20% {
+        left: 100%;
+    }
+    100% {
+        left: 100%;
+    }
+}
+
+.name h2:hover {
+    transform: translateY(-2px);
+}
+
+.name h2::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #635BFF, transparent);
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform 0.3s ease;
+}
+
+.name h2:hover::after {
+    transform: scaleX(1);
+}
+
+.about-me {
+    margin: 4rem 0;
+    font-size: 1.5rem;
+    color: #D4D4D4;
+    background: #1E1E1E;
+    padding: 4rem 3rem;
+    border-radius: 8px;
+    font-family: 'SF Mono', 'Consolas', 'Monaco', monospace;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: 1px solid #333;
+    position: relative;
+    counter-reset: line;
+    text-align: left;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    display: flex;
+}
+
+.about-me::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(99, 91, 255, 0.1),
+        transparent
+    );
+    animation: shimmer 10s infinite;
+}
+
+.about-me .line-numbers {
+    padding-right: 1.5rem;
+    border-right: 1px solid #333;
+    margin-right: 1.5rem;
+    color: #858585;
+    user-select: none;
+    line-height: 2.2;
+}
+
+.about-me .line-numbers span {
+    display: block;
+    text-align: right;
+    font-weight: normal;
+    height: 2.2rem;
+    padding-top: 0.8rem;
+}
+
+.about-me .content {
+    flex: 1;
+    cursor: text;
+    outline: none;
+    transition: background-color 0.3s ease;
+    padding-bottom: 1rem;
+}
+
+.about-me .content:focus {
+    background-color: #252526;
+}
+
+.about-me .content:focus .keyword,
+.about-me .content:focus .string {
+    color: inherit;
+    font-weight: normal;
+}
+
+.about-me .keyword {
+    color: #569CD6;
+    font-weight: 500;
+}
+
+.about-me .string {
+    color: #CE9178;
+    font-weight: 500;
+}
+
+.about-me .comment {
+    color: #6A9955;
+    font-style: italic;
+}
+
+.about-me p {
+    margin: 0;
+    position: relative;
+    text-align: left;
+    height: 2.2rem;
+    padding-top: 0.8rem;
+}
+
+.about-me p:first-child {
+    margin-top: 0;
+}
+
+.about-me p:last-child {
+    margin-bottom: 0;
+}
+
+.contact {
+    margin-top: 3rem;
+    font-size: 1.5rem;
+    padding: 2rem;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contact p {
+    margin-bottom: 1.5rem;
+    color: #1A1F36;
+    font-weight: 500;
+}
+
+.contact-links {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.contact-links a {
+    color: #635BFF;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+}
+
+.contact-links a:hover {
+    color: #4B45C6;
+    background: rgba(99, 91, 255, 0.1);
+    transform: translateY(-2px);
+}
+
+.contact-links i {
+    font-size: 1.2em;
 }
 
 .announcement{
@@ -44,9 +247,10 @@
         border-color: transparent
     }
     50% {
-        border-color: orange;
+        border-color: #635BFF
     }
 }
+
 
 #svg-bubbles {
     display: block;
@@ -62,10 +266,55 @@
 
     .name h2 {
         white-space: normal;
+        font-size: 2.5rem;
     }
 
     .cards {
         margin-top: 11rem !important;
+    }
+
+    .header {
+        margin-top: 10rem;
+        padding: 0 1rem;
+    }
+
+    .about-me {
+        font-size: 1.2rem;
+        padding: 3rem 2rem;
+        margin: 2rem 0;
+    }
+
+    .about-me .line-numbers {
+        padding-right: 1.5rem;
+        margin-right: 1.5rem;
+        line-height: 2.8;
+    }
+
+    .about-me .line-numbers span {
+        height: 2.8rem;
+        padding-top: 0.8rem;
+        display: block;
+        text-align: right;
+    }
+
+    .about-me p {
+        height: 2.8rem;
+        padding-top: 0.8rem;
+        line-height: 1.2;
+        margin-bottom: 0.4rem;
+    }
+
+    .about-me .content {
+        line-height: 2.8;
+    }
+
+    .contact {
+        font-size: 1.3rem;
+        padding: 1.5rem;
+    }
+
+    .contact-links {
+        gap: 1.5rem;
     }
 }
 
