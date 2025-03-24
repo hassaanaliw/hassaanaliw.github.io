@@ -16,11 +16,10 @@
     letter-spacing: .15em;
     animation: typing 3.5s steps(100, end),
     blink-caret .75s step-end infinite;
-    font-size: 3.5rem;
     margin-bottom: 2rem;
     color: #1A1F36;
     position: relative;
-    font-weight: 700;
+    font-weight: bolder;
     text-shadow: 0 2px 10px rgba(99, 91, 255, 0.1);
     transform: translateY(0);
     transition: transform 0.3s ease;
@@ -72,7 +71,7 @@
 }
 
 .name h2:hover::after {
-    transform: scaleX(1);
+    transform: scaleX(2);
 }
 
 .about-me {
@@ -167,6 +166,67 @@
     text-align: left;
     height: 2.2rem;
     padding-top: 0.8rem;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.about-me p:nth-child(1) {
+    animation: typing 2s steps(40, end);
+}
+
+.about-me p:nth-child(2) {
+    animation: typing 2s steps(40, end) 0.5s forwards;
+    width: 0;
+}
+
+.about-me p:nth-child(3) {
+    animation: typing 2s steps(40, end) 1s forwards;
+    width: 0;
+}
+
+.about-me p:nth-child(4) {
+    animation: typing 2s steps(40, end) 1.5s forwards;
+    width: 0;
+}
+
+.about-me .keyword,
+.about-me .string,
+.about-me .comment {
+    opacity: 0;
+    animation: fadeIn 0.3s forwards;
+}
+
+.about-me p:nth-child(1) .keyword,
+.about-me p:nth-child(1) .string,
+.about-me p:nth-child(1) .comment {
+    animation-delay: 2s;
+}
+
+.about-me p:nth-child(2) .keyword,
+.about-me p:nth-child(2) .string,
+.about-me p:nth-child(2) .comment {
+    animation-delay: 2.5s;
+}
+
+.about-me p:nth-child(3) .keyword,
+.about-me p:nth-child(3) .string,
+.about-me p:nth-child(3) .comment {
+    animation-delay: 3s;
+}
+
+.about-me p:nth-child(4) .keyword,
+.about-me p:nth-child(4) .string,
+.about-me p:nth-child(4) .comment {
+    animation-delay: 3.5s;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 .about-me p:first-child {
@@ -298,14 +358,17 @@
     }
 
     .about-me p {
-        height: 2.8rem;
+        height: auto;
         padding-top: 0.8rem;
-        line-height: 1.2;
+        line-height: 1.4;
         margin-bottom: 0.4rem;
+        white-space: normal;
+        overflow: visible;
+        width: 100%;
     }
 
     .about-me .content {
-        line-height: 2.8;
+        line-height: 1.4;
     }
 
     .contact {
