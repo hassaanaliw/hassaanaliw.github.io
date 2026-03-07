@@ -137,8 +137,8 @@ body {
 }
 
 .role-at {
-  font-size: 1.125rem;
-  font-weight: 400;
+  font-size: 1.55rem;
+  font-weight: 600;
   color: var(--muted);
   -webkit-text-fill-color: var(--muted);
 }
@@ -219,5 +219,5 @@ body {
 /* ── Responsive ── */
 @media (max-width: 480px) {
   .role { flex-wrap: wrap; gap: 0.25rem; }
-  .role-at { font-size: 0.875rem; }
+  .role-at { font-size: 1.275rem; }
 }
